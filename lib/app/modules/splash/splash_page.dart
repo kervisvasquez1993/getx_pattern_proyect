@@ -7,10 +7,15 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("hola"),
+      ),
       body: Container(
         child: Center(
-          child: Text("hola"),
-        ),
+            child: FloatingActionButton(
+          child: Text("ir al Home"),
+          onPressed: () => splashController.irHome(),
+        )),
       ),
     );
   }
