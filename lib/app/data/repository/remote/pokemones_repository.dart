@@ -4,4 +4,5 @@ import 'package:getx_petters_ejemplo/app/data/providers/remote/list_poke_api.dar
 
 class PokemonesRepository {
   final ListPokeApi _pokemones = Get.find<ListPokeApi>();
+  Future<List<Pokemones>> getToPokemones() => _pokemones.getToPokemones();
 }
